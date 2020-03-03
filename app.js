@@ -4,6 +4,7 @@ const definitions = require('./definitions.js');
 
 const app = express();
 
+//runs in order from top to bottom and the 404 is the last result if request is not found.
 app.get('/api/v1/definitions', function(request, response){
   response.json(definitions);
 })
